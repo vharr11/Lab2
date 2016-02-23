@@ -1,0 +1,4 @@
+Lightning
+http://nowcoast.noaa.gov/arcgis/services/nowcoast/sat_meteo_emulated_imagery_lightningstrikedensity_goes_time/MapServer/WMSServer
+Layer 1
+
