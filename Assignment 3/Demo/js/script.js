@@ -27,3 +27,18 @@ var temperature = L.tileLayer.wms("http://nowcoast.noaa.gov/arcgis/services/nowc
     attribution: "Weather data © 2012 IEM Nexrad",
 		opacity: 0.30,
 }).addTo(map);
+
+// Layers used for basemap. Create an object with Layers for each basemap
+// baseLayers name should match your tile layer (base map)
+var baseLayers = {
+    "Map": map,
+    };
+
+// we have three layers that contain WMS layers.
+var overlays = {
+    "Lightning": lightning,
+    "Radar": radar,
+		"Temperature":temperature
+};
+
+L.control.layers(baseLayers, overlays).addTo(map);
